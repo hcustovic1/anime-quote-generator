@@ -26,7 +26,8 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "prettier"
     ]
   },
   "browserslist": {
@@ -42,6 +43,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react-query": "^1.1.2"
+    "@types/react-query": "^1.1.2",
+    "eslint-config-prettier": "^8.3.0"
   }
 }
