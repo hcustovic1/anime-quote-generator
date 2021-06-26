@@ -1,23 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { useAnime } from './api/anime/hooks';
+import 'App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Home, Profile } from 'pages';
 
 function App() {
-  const { data, status } = useAnime();
-
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <p>{status}</p>
-
-        {status === 'loading' && 'loading...'}
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='profile' element={<Profile />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

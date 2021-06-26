@@ -3,6 +3,5 @@ export const get = async () => {
   return res.json();
 };
 
-export default {
-  get
-};
+const actions = { get };
+export default actions;
