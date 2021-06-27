@@ -11,11 +11,11 @@ export default function AnimeQuoteBlock() {
     return <p>Error!</p>;
   }
 
-  console.info(data);
-
   return (
-    <>
-      <span>{isLoading}</span>
-    </>
+    <blockquote>
+      <p>{data?.anime}</p>
+      <p>{data?.character}</p>
+      <p>{data?.quote}</p>
+    </blockquote>
   );
 }

@@ -50,7 +50,7 @@
     "@types/react-query": "^1.1.2",
     "autoprefixer": "^9.8.6",
     "eslint-config-prettier": "^8.3.0",
-    "postcss": "^7.0.36",
+    "postcss": "^8.3.5",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.4"
   }
 }
